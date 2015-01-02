@@ -1,0 +1,14 @@
+<div>
+<p>取得には時間がかかります。<a class="btn btn-warning btn-sm">取得中です...</a>が表示されている場合、3分ほどお待ちいただくと、<a class="btn btn-danger btn-sm">ダウンロード</a>が表示され、画像のzipファイルをダウンロードできます。</p>
+<p>取得できない記事もあるので、その時はずっと取得中になります。</p>
+</div>
+<div>
+<a href="http://matome.naver.jp/odai/<%=h params[:id]%>">http://matome.naver.jp/odai/<%=h params[:id]%></a>を取得します
+</div>
+<a href="/" class="btn btn-primary btn-lg">戻る</a>
+
+<% if @flag_getting %>
+<a href="" class="btn btn-warning btn-lg">取得中です...</a>
+<% else %>
+<a href="/download/<%=h params[:id] %>" class="btn btn-danger btn-lg">ダウンロード</a>
+<% end %>
