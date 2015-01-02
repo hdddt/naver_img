@@ -63,6 +63,7 @@ helpers do
     page = Nokogiri::HTML(open(first_url))
     i=0
     loop {
+      sleep 3
       p img_url = page.search('div.LyMain').search('img')[0].attribute('src').value
       p next_url = page.search('p.mdMTMEnd01Pagination01').search('a.mdMTMEnd01Pagination01Next').attribute('href').value
       page = Nokogiri::HTML(open(next_url))
