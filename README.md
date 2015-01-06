@@ -12,4 +12,4 @@ https://github.com/hdddt/naver_img/blob/master/naver_img.rb
 ruby naver_img.rb http://matome.naver.jp/odai/2139763936915823701
 ```
 
-とかやればOKです
+とかやればOK。`./tmp/imgs`の中に保存されます。
